@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom'
 import styles from './Navbar.module.css'
 import navlinkStyles from './Navlink.module.css'
+import { Wrapper } from './Wrapper'
 export default function Navbar() {
 	return (
 		<Router>
@@ -42,7 +43,11 @@ export default function Navbar() {
 	)
 }
 function Home() {
-	return <h2>Tabi</h2>
+	return (
+		<Wrapper>
+			<h2>Tabi</h2>
+		</Wrapper>
+	)
 }
 
 function About() {

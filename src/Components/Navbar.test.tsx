@@ -1,9 +1,13 @@
 import React from 'react'
 import { render, screen } from '@testing-library/react'
-import Navbar from './Navbar'
-
+import { Navbar } from './Navbar'
+import { BrowserRouter as Router } from 'react-router-dom'
 test('renders users link', () => {
-	render(<Navbar />)
-	const linkElement = screen.getByText(/Users/i)
+	render(
+		<Router>
+			<Navbar />
+		</Router>
+	)
+	const linkElement = screen.getByText(/Tabi/i)
 	expect(linkElement).toBeInTheDocument()
 })

@@ -1,21 +1,27 @@
 import React from 'react'
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import {
+	BrowserRouter as Router,
+	Switch,
+	Route,
+	NavLink,
+} from 'react-router-dom'
 import styles from './Navbar.module.css'
+import navlinkStyles from './Navlink.module.css'
 export default function Navbar() {
 	return (
 		<Router>
 			<div>
 				<div>
 					<nav className={styles.navbar}>
+						<NavLink className={navlinkStyles.brandLink} to="/">
+							Tabi
+						</NavLink>
 						<ul>
-							<li>
-								<Link to="/">Tabi</Link>
+							<li className={navlinkStyles.navlink}>
+								<NavLink to="/about">About</NavLink>
 							</li>
-							<li>
-								<Link to="/about">About</Link>
-							</li>
-							<li>
-								<Link to="/users">Users</Link>
+							<li className={navlinkStyles.navlink}>
+								<NavLink to="/users">Users</NavLink>
 							</li>
 						</ul>
 					</nav>

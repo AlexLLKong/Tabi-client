@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { Navbar } from './Components/Navbar'
-import { LandingPage } from './Components/LandingPage'
+import { LandingPage } from './Pages/LandingPage'
 function App() {
 	return (
 		<Router>

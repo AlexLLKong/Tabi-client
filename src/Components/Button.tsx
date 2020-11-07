@@ -1,5 +1,11 @@
 import React, { MouseEvent, FC } from 'react'
-type Props = { onClick(e: MouseEvent<HTMLElement>): void }
-export const Button: FC<Props> = ({ onClick: handleClick, children }) => (
-	<button onClick={handleClick}>{children}</button>
+type Props = { className: string; onClick(e: MouseEvent<HTMLElement>): void }
+export const Button: FC<Props> = ({
+	className: classes,
+	onClick: handleClick,
+	children,
+}) => (
+	<button className={classes} onClick={handleClick}>
+		{children}
+	</button>
 )

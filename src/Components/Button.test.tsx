@@ -7,7 +7,7 @@ const testFn = (e: MouseEvent<HTMLElement>): void => {
 	console.log('clicked')
 }
 test('renders with name', () => {
-	render(<Button onClick={testFn} children={<p>button</p>} />)
+	render(<Button className="" onClick={testFn} children={<p>button</p>} />)
 	const buttonElement: HTMLElement = screen.getByText(/button/i)
 	expect(buttonElement).toBeInTheDocument()
 })

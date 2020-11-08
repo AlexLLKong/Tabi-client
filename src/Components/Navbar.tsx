@@ -13,7 +13,7 @@ export const Navbar: FC = () => (
 				<NavLink to="/about">About</NavLink>
 			</li>
 			<li className={navlinkStyles.navlink}>
-				<NavLink to="/users">Users</NavLink>
+				<NavLink to="/trips">My Trips</NavLink>
 			</li>
 		</ul>
 	</nav>

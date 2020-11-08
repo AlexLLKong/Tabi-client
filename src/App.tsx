@@ -2,6 +2,7 @@ import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { Navbar } from './Components/Navbar'
 import { LandingPage } from './Pages/LandingPage'
+import { MyTripsPage } from './Pages/MyTripsPage'
 function App() {
 	return (
 		<Router>
@@ -12,8 +13,8 @@ function App() {
 						<Route path="/about">
 							<About />
 						</Route>
-						<Route path="/users">
-							<Users />
+						<Route path="/trips">
+							<MyTripsPage />
 						</Route>
 						<Route path="/">
 							<LandingPage />
@@ -29,8 +30,4 @@ export default App
 
 function About() {
 	return <h2>About</h2>
-}
-
-function Users() {
-	return <h2>Users</h2>
 }

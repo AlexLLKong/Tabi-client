@@ -1,6 +1,7 @@
 import React, { MouseEvent, FC } from 'react'
 import { Wrapper } from '../Components/Wrapper'
 import { Button } from '../Components/Button'
+import pageStyles from './Pages.module.css'
 import styles from './LandingPage.module.css'
 const tempFn = (e: MouseEvent<HTMLElement>): void => {
 	e.preventDefault()
@@ -9,8 +10,8 @@ const tempFn = (e: MouseEvent<HTMLElement>): void => {
 
 export const LandingPage: FC = () => (
 	<Wrapper>
-		<h1 className={styles.title}>Tabi</h1>
-		<p className={styles.description}>
+		<h1 className={pageStyles.title}>Tabi</h1>
+		<p className={pageStyles.bodyText}>
 			Just one more reason to go on that trip.
 		</p>
 		{/* Should consider changing this Button to a navlink instead */}

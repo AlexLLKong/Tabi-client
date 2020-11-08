@@ -1,7 +1,5 @@
 import React, { FC } from 'react'
 
-type Props = { className: string }
+type Props = {}
 
-export const Card: FC<Props> = ({ className, children }) => (
-	<div className={className}>{children}</div>
-)
+export const Card: FC<Props> = ({ children }) => <div>{children}</div>

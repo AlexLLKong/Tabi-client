@@ -40,7 +40,7 @@ export const MyTripsPage: FC = () => (
 	<div>
 		<Wrapper>
 			<h1 className={pageStyles.title}>My Trips</h1>
-			<div className={styles.cardContainer}>{generateCards(3)}</div>
+			<div className={pageStyles.cardContainer}>{generateCards(3)}</div>
 		</Wrapper>
 	</div>
 )

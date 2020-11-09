@@ -9,3 +9,11 @@
 	color: #ffffff;
 	margin-bottom: 3rem;
 }
+.cardContainer {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	max-width: 912px;
+	margin-top: 2rem;
+}

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { Navbar } from './Components/Navbar'
 import { LandingPage } from './Pages/LandingPage'
 import { MyTripsPage } from './Pages/MyTripsPage'
+import { PickTemplatePage } from './Pages/PickTemplatePage'
 function App() {
 	return (
 		<Router>
@@ -15,6 +16,9 @@ function App() {
 						</Route>
 						<Route path="/trips">
 							<MyTripsPage />
+						</Route>
+						<Route path="/templates">
+							<PickTemplatePage />
 						</Route>
 						<Route path="/">
 							<LandingPage />

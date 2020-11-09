@@ -1,8 +1,9 @@
 import React, { FC } from 'react'
-
-type Props = { title: string }
-export const ShareTripPage: FC<Props> = ({ title }) => (
-	<div>
+import { Wrapper } from '../Components/Wrapper'
+type Props = { title: string; content: JSX.Element }
+export const ShareTripPage: FC<Props> = ({ title, content }) => (
+	<Wrapper>
 		<h1 className="">{title}</h1>
-	</div>
+		<div>{content}</div>
+	</Wrapper>
 )

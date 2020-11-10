@@ -14,6 +14,7 @@ const generateCards = (numCards: number): JSX.Element[] => {
 	for (let i: number = 0; i < numCards; i++) {
 		returnArr.push(
 			<Card
+				key={`Card${i}`}
 				children={
 					<div>
 						<h3>Example Card {i + 1}</h3>

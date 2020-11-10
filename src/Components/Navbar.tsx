@@ -15,6 +15,9 @@ export const Navbar: FC = () => (
 			<li className={navlinkStyles.navlink}>
 				<NavLink to="/trips">My Trips</NavLink>
 			</li>
+			<li className={navlinkStyles.navlink}>
+				<NavLink to="/tripeditor">Trip Editor</NavLink>
+			</li>
 		</ul>
 	</nav>
 )

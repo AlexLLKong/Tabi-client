@@ -8,6 +8,7 @@ const useInput = (
 	const [value, setValue] = useState('')
 	const input = (
 		<input
+			className={styles.editField}
 			value={value}
 			onChange={e => setValue(e.target.value)}
 			type={type}
@@ -52,7 +53,7 @@ export const EditFieldContainer: FC<Props> = ({ content }) => {
 	return (
 		<div className={styles.mainContainer}>
 			<Wrapper>{newValueInput}</Wrapper>
-			<div>{content}</div>
+			<div className={styles.contentContainer}>{content}</div>
 		</div>
 	)
 }

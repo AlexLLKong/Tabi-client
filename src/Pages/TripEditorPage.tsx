@@ -14,7 +14,6 @@ const mockContent: JSX.Element = (
 )
 export const TripEditorPage: FC = (/*{ content }*/) => (
 	<Wrapper>
-		<h1>Trip Editor</h1>
 		<EditFieldContainer content={mockContent} />
 	</Wrapper>
 )

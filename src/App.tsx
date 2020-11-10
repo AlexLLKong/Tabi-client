@@ -4,6 +4,7 @@ import { Navbar } from './Components/Navbar'
 import { LandingPage } from './Pages/LandingPage'
 import { MyTripsPage } from './Pages/MyTripsPage'
 import { PickTemplatePage } from './Pages/PickTemplatePage'
+import { TripEditorPage } from './Pages/TripEditorPage'
 function App() {
 	return (
 		<Router>
@@ -19,6 +20,9 @@ function App() {
 						</Route>
 						<Route path="/templates">
 							<PickTemplatePage />
+						</Route>
+						<Route path="/tripeditor">
+							<TripEditorPage />
 						</Route>
 						<Route path="/">
 							<LandingPage />
